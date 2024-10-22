@@ -1,0 +1,36 @@
+<Window 
+    
+    x:Class="AWSSqsDemoAvalonia1.MainWindow"
+    
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Membership Card" Width="300" Height="250"
+    xmlns:vm="using:AWSSqsDemoAvalonia1"
+    x:DataType="vm:MessageData"
+    x:CompileBindings="True">
+    
+    <StackPanel>
+    
+        <TextBlock Text="Membership Card" FontSize="24" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+    
+        <TextBlock Text="{Binding clubLogo}" Width="100" Height="100" 
+               HorizontalAlignment="Center" Margin="0,0,0,10"/>
+    
+        <TextBlock Text="{Binding firstname}" FontSize="18" FontWeight="SemiBold" 
+                   HorizontalAlignment="Center" Margin="0,5"/>
+    
+        <TextBlock Text="{Binding lastname}" FontSize="18" FontWeight="SemiBold" 
+                   HorizontalAlignment="Center" Margin="0,5"/>
+    
+        <TextBlock Text="{Binding clubName}" FontSize="16" 
+                   HorizontalAlignment="Center" Margin="0,10"/>
+    
+        <TextBlock Text="{Binding uuid}" FontSize="14" 
+                   HorizontalAlignment="Center" Margin="0,5"/>
+    
+       
+    </StackPanel>
+
+      
+</Window>
